@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+	--color-primario:#000000;
+	--color-secundario:#F6F6F6;
+	--color-terciario:#22D4FD;
+
+	--fuente-montse: "Montserrat", sans-serif;
+	--fuente-krona: "Krona One", sans-serif;
+}
+
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+    background-color: var(--color-primario);
+    color:var(--color-secundario);
+	box-sizing: border-box;
+}
+
+.Header{
+	padding: 2% 0% 0% 15%;
+}
+
+.Header_Menu{
+	display: flex;
+	gap: 80px;
+}
+
+.Header_Menu_Links{
+	font-family: var(--fuente-krona);
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: var(--color-terciario);
+	text-decoration: none;
+}
+
+
+strong{
+    color: var(--color-terciario);
+}
+
+
+.Presentacion{
+	display: flex;
+	align-items: center;
+	padding: 6% 15%;
+	justify-content: space-between;
+	gap: 82px;
+}
+
+
+.Presentacion_contenido{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.Presentacio_contenido_titulo{
+	font-size: 2.25rem;
+	font-family: var(--fuente-krona);
+}
+
+.titulo-destque{
+	color: var(--color-terciario);
+}
+
+.Presentacion_contenido_texto{
+	font-size: 1.5rem;
+	font-family: var(--fuente-montse);
+}
+
+
+.Presentacion_enlaces{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+	gap: 32px;
+}
+
+.Presentacion_enlaces_links{
+	width: 50%;
+	text-align: center;
+	padding: 21.5px 0;
+	border-radius: 8px;
+	font-family: var(--fuente-montse);
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-decoration: none;
+	color: var(--color-secundario);
+	border: 2px solid  var(--color-terciario);
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.Presentacion_enlaces_subtitulo{
+	font-family: var(--fuente-krona);
+	font-size: 1.5rem;
+	font-weight: 400px;
+}
+
+.Presentacion_enlaces_links:hover{
+	background-color: var(--color-primario);
+}
+
+.Presentacion_imagen{
+	width: 50%;
+}
+
+.Footer{
+	background-color: var(--color-terciario);
+	padding: 1.5rem;
+	color: var(--color-primario);
+	text-align: center;
+	font-family: var(--fuente-montse);
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+@media (max-width: 1200px){
+	.Header{
+		padding: 10%;
+	}
+
+	.Header_Menu{
+		justify-content: center;
+	}
+
+
+	.Presentacion{
+		flex-direction: column-reverse;
+		padding: 5%;
+	}
+
+	.Presentacion_contenido{
+		width: auto;
+	}
+}
